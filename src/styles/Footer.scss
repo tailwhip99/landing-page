@@ -10,8 +10,8 @@
     color:white;
     scroll-snap-align:start;
     @media only screen and (max-width: 600px) {
-      height:30vw;
-          
+      height:50vw;
+          gap:3vw;
             }
 
     .contacts {
@@ -20,7 +20,7 @@
         svg {
            font-size: 3vw;
            @media only screen and (max-width: 600px) {
-            font-size: 5vw;
+            font-size: 10vw;
               
                 }
         }
@@ -31,14 +31,14 @@
         font-size:1.5vw;
         gap:6vw;
         @media only screen and (max-width: 600px) {
-            font-size: 3vw;
+            font-size: 3.8vw;
               
                 }
     }
     .last-line {
         font-size:1.5vw;
         @media only screen and (max-width: 600px) {
-            font-size: 3vw;
+            font-size: 4vw;
               
                 }
     }

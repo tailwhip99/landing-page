@@ -4,20 +4,24 @@
    border-bottom: 1vw groove  #a5b4fc58;
    scroll-snap-align:start;
    @media only screen and (max-width: 600px) {
+    border-bottom: 2vw groove  #a5b4fc58;
     padding:20vw 5vw 5vw 5vw;
+    flex-direction:column;
    }
     .left-side {
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        @media only screen and (max-width: 600px) {
+         gap:2vw;
+           }
         h1 {
             font-size:4vw;
             margin-bottom:0.2vw;
             color:var(--darkerblue);
             @media only screen and (max-width: 600px) {
-                font-size:6vw;
+                font-size:8vw;
                }
         }
         h3 {
@@ -25,7 +29,7 @@
             margin-top:0.6vw;
             color:#0284c7;
             @media only screen and (max-width: 600px) {
-                font-size:3vw;
+                font-size:4vw;
                }
         }
         p {
@@ -51,9 +55,9 @@
                 color:white;
                 border:none;
                 @media only screen and (max-width: 600px) {
-                  font-size:3vw;
-                  width:20vw;
-                  height:5vw;
+                  font-size:5vw;
+                  width:30vw;
+                  height:7vw;
                     }
             }
         }
@@ -70,5 +74,10 @@
             height:20vw;
          
         }
-    }
+        @media only screen and (max-width: 600px) {
+            visibility:hidden;
+            height:0;
+            width:0;
+              }
+    };
 }

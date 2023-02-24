@@ -122,7 +122,7 @@ function Contact() {
         </button>
     </form>
   </div>
-  <p className="text">Válassz kínálataink közül!</p>
+  <p className="text">Válasszon kínálataink közül!</p>
 </div>
 
  )

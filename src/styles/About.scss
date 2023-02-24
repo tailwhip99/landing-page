@@ -4,12 +4,16 @@
  justify-content: center;
  border-bottom: 0.3vw dotted var(--blue);
  scroll-snap-align:start;
+ @media only screen and (max-width: 600px) {
+    padding:0vw 4vw 10vw 4vw;
+    
+      }
     h1 {
         font-size: 3.5vw;
         color:var(--darkerblue);
         padding-bottom:3vw;
         @media only screen and (max-width: 600px) {
-            font-size:5vw;
+            font-size:6.5vw;
             
               }
     }
@@ -35,13 +39,17 @@
                     margin:0;
                     color:var(--darkerblue);
                     @media only screen and (max-width: 600px) {
-                        font-size:3vw;
+                        font-size:4.5vw;
                         
                           }
                 }
                 svg {
                     font-size:3vw;
-                    color:var(--darkerblue)
+                    color:var(--darkerblue);
+                    @media only screen and (max-width: 600px) {
+                        font-size:4.5vw;
+                        
+                          }
                 }
             }
             .description {
@@ -50,7 +58,7 @@
                 color:#0ea5e9;
                 text-align: left;
                 @media only screen and (max-width: 600px) {
-                    font-size:2vw;
+                    font-size:2.2vw;
                     
                       }
             }
@@ -71,7 +79,7 @@
         font-size: 3vw;
         color:var(--darkerblue);
         @media only screen and (max-width: 600px) {
-            font-size:3vw;
+            font-size:5vw;
             
               }
     }
@@ -79,7 +87,7 @@
     font-size: 1.5vw;
     color:var(--blue);
     @media only screen and (max-width: 600px) {
-        font-size:1.8vw;
+        font-size:2.5vw;
         
           }
    }
@@ -90,13 +98,13 @@
  
 
     flex-direction: column;
-    gap:2vw;
+    gap:1vw;
     
-    color : var(--lighterblue);
-    padding:0 0 0 2vw ;
+    color : var(--darkerblue);
+    padding:1vw 0 0 2vw ;
     @media only screen and (max-width: 600px) {
-        font-size:2vw;
-        
+        font-size:2.7vw;
+        padding:1vw 0 0 4vw ;
           }
    }
 }
@@ -109,8 +117,8 @@
     width:35vw;
     text-align: left;
     @media only screen and (max-width: 600px) {
-        width:60vw;
-        height:50vw;
+        width:120vw;
+        height:60vw;
         
           }
     .first-line {
@@ -124,6 +132,10 @@
     img {
       height:4vw;
        border-radius:50%;
+       @media only screen and (max-width: 600px) {
+        height:8vw;;
+    
+          }
     }
   }
        
@@ -131,23 +143,28 @@
     .right {
         display:flex;
     flex-direction: column;
-  
-  
+
+    @media only screen and (max-width: 600px) {
+        font-size:5vw;
+   
+          }
     .name {
         font-size:1.5vw;
         padding:0;
         margin:0;
         @media only screen and (max-width: 600px) {
-            font-size:3vw;
-            
+            font-size:5vw;
+      
               }
     }
     .website {
+       
         font-size:1vw;
         padding:0;
         margin:0;
         @media only screen and (max-width: 600px) {
-            font-size:2vw;
+            font-size:4vw;
+         
         }
     }
    
@@ -158,7 +175,8 @@
         font-size: 1.2vw;
         color: rgb(73, 73, 73);
         @media only screen and (max-width: 600px) {
-            font-size:1.9vw;
+            font-size:2.5vw;
+           
             
               }
     }

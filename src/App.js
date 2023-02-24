@@ -10,6 +10,11 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 function App() {
+
+  const enableMenu  = () => {
+   const menu = document.querySelector('.menu');
+   menu.style.visibility="visible";
+  }
   return (
     <div className="App">
       <div className="header">
@@ -20,7 +25,12 @@ function App() {
         <AnchorLink  className="link" href="#services"> <h3>SZOLGÁLTATÁSAINK</h3></AnchorLink>
    
         <AnchorLink className="link"  href="#contacts"> <h4 className="contacts"><b><i>KAPCSOLAT</i></b></h4></AnchorLink>
-
+        <input type="checkbox" id="menu_checkbox" />
+<label for="menu_checkbox" onClick={enableMenu}>
+  <div></div>
+  <div></div>
+  <div></div>
+</label>
 
         
     </div>
