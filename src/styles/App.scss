@@ -1,0 +1,80 @@
+:root {
+  --lighterblue:#38bdf8;
+  --blue: #0ea5e9;
+  --darkerblue:#0369a1;
+  --purple: #a5b4fc ;
+}
+.App {
+  text-align: center;
+  background-color:#f1f5f9;
+
+scroll-snap-type: y mandatory;
+  overflow-y: hidden;
+  * {
+    font-family: 'Gloock', serif;
+    .link {
+      text-decoration: none;
+    }
+}
+
+.header {
+  display:flex;
+padding-left:3vw;
+
+align-items: center;
+position: fixed;
+z-index:2;
+background-color: white;
+width:100vw;
+height:6vw;
+gap:36vw;
+scroll-snap-align:start;
+h1 {
+
+  font-size:3vw;;
+  color:var(--darkerblue);
+  @media only screen and (max-width: 600px) {
+     font-size:3vw;
+    
+  }
+
+ }
+  .menu {
+ 
+    gap:2vw;
+    display:flex;
+align-items: center;
+
+
+ h3 {
+  font-size: 1.5vw;
+  font-weight: bold;
+color:var(--blue);
+@media only screen and (max-width: 600px) {
+font-size:3vw;
+}
+    }
+
+    h4 {
+        font-size: 1.2vw;
+        color:var(--blue);
+        text-decoration:none;
+        @media only screen and (max-width: 600px) {
+           visibility:hidden;
+           width:0;
+           height:0;
+         }
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+   height:15vw;
+   gap:15vw;
+ 
+  
+   
+
+}
+}
+}

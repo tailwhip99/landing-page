@@ -1,0 +1,45 @@
+.footer {
+    background-color: var(--blue);
+    width:100vw;
+    height:20vw;
+    gap:1.5vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    scroll-snap-align:start;
+    @media only screen and (max-width: 600px) {
+      height:30vw;
+          
+            }
+
+    .contacts {
+        display:flex;
+        gap:1vw;
+        svg {
+           font-size: 3vw;
+           @media only screen and (max-width: 600px) {
+            font-size: 5vw;
+              
+                }
+        }
+    }
+    .routing {
+        display:flex;
+
+        font-size:1.5vw;
+        gap:6vw;
+        @media only screen and (max-width: 600px) {
+            font-size: 3vw;
+              
+                }
+    }
+    .last-line {
+        font-size:1.5vw;
+        @media only screen and (max-width: 600px) {
+            font-size: 3vw;
+              
+                }
+    }
+}
