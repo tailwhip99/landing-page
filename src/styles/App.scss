@@ -29,7 +29,9 @@ width:100vw;
 height:6vw;
 gap:36vw;
 scroll-snap-align:start;
-
+@media (max-width:900px) {
+gap:23vw;
+  }
 body {
 
 
@@ -121,6 +123,9 @@ h1 {
  
   font-size:3vw;;
   color:var(--darkerblue);
+  @media (max-width:900px) {
+    font-size:3vw;
+    }
   @media only screen and (max-width: 600px) {
     
      font-size:6vw;
@@ -139,12 +144,17 @@ align-items: center;
   font-size: 1.5vw;
   font-weight: bold;
 color:var(--blue);
+@media (max-width:900px) {
+  font-size:2vw;
+  }
 @media only screen and (max-width: 600px) {
 font-size:3vw;
 visibility: hidden;
 
 width:0;
 height:0;
+
+
 }
     }
 
@@ -152,13 +162,16 @@ height:0;
         font-size: 1.2vw;
         color:var(--blue);
         text-decoration:none;
+        @media (max-width:900px) {
+          font-size:1.6vw;
+          }
         @media only screen and (max-width: 600px) {
            visibility:hidden;
            width:0;
            height:0;
          }
     }
-    
+  
 }
 
 
@@ -167,5 +180,45 @@ height:0;
 
 
 }
+
 }
+
+.mobile-header {
+  z-index:1;
+  position:fixed;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+
+align-items: center;
+padding-top:5vw;
+
+
+  top:-100%;
+  left:0%;
+  width:100%;
+  min-height:10vh;
+  background-color: var(--darkerblue);
+  transition:0.4s;
+
+ 
+  
+  .h1,h2,h3,h4 {
+    color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+    
+max-width:100vw;
+
+
+  padding-top:2vw;
+
+    font-size: 4vw;
+  }
+
+  .h1,h2,h3,h4 :hover {
+   
+  }
+}
+
 }

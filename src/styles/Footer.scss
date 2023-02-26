@@ -1,5 +1,6 @@
 .footer {
     background-color: var(--blue);
+    
     width:100vw;
     height:20vw;
     gap:1.5vw;
@@ -9,6 +10,9 @@
     align-items: center;
     color:white;
     scroll-snap-align:start;
+    @media only screen and (max-width: 769px) {
+       padding-top:5vw;
+    }
     @media only screen and (max-width: 600px) {
       height:50vw;
           gap:3vw;
@@ -19,6 +23,9 @@
         gap:1vw;
         svg {
            font-size: 3vw;
+           @media only screen and (max-width: 769px) {
+            font-size:5vw;
+        }
            @media only screen and (max-width: 600px) {
             font-size: 10vw;
               
@@ -30,13 +37,20 @@
 
         font-size:1.5vw;
         gap:6vw;
+       @media (max-width:768px) {
+        font-size: 3vw;
+       }
+
         @media only screen and (max-width: 600px) {
-            font-size: 3.8vw;
+            font-size: 3.5vw;
               
                 }
     }
     .last-line {
         font-size:1.5vw;
+        @media only screen and (max-width: 769px) {
+            font-size:2vw;
+        }
         @media only screen and (max-width: 600px) {
             font-size: 4vw;
               

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/Intro.scss'
-import intro from '../images/intro.jpg'
+
 import intro2 from '../images/intro2.png'
 import AnchorLink from "react-anchor-link-smooth-scroll"
 function Intro() {

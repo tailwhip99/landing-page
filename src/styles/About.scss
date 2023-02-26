@@ -12,6 +12,7 @@
         font-size: 3.5vw;
         color:var(--darkerblue);
         padding-bottom:3vw;
+      
         @media only screen and (max-width: 600px) {
             font-size:6.5vw;
             
@@ -38,18 +39,26 @@
                     font-size:1.5vw;  
                     margin:0;
                     color:var(--darkerblue);
+                    @media only screen and (max-width:769px) {
+                        font-size:3vw;
+                      }
                     @media only screen and (max-width: 600px) {
                         font-size:4.5vw;
                         
                           }
+                        
                 }
                 svg {
                     font-size:3vw;
                     color:var(--darkerblue);
+                    @media only screen and (max-width:769px) {
+                        font-size:4vw;
+                      }
                     @media only screen and (max-width: 600px) {
                         font-size:4.5vw;
                         
                           }
+                         
                 }
             }
             .description {
@@ -57,18 +66,26 @@
             font-size:1.5vw;
                 color:#0ea5e9;
                 text-align: left;
+                @media only screen and (max-width:769px) {
+                    font-size:2vw;
+                  }
                 @media only screen and (max-width: 600px) {
                     font-size:2.2vw;
                     
                       }
+
+                  
             }
         }
     }
 
     .other-infos {
-       
+
     display:flex;
     align-items: center;
+    @media only screen and (max-width:769px) {
+      gap:3vw;
+      }
 .left-side {
     display:flex;
     flex-direction: column;
@@ -78,18 +95,27 @@
     h2 {
         font-size: 3vw;
         color:var(--darkerblue);
+        @media only screen and (max-width:769px) {
+            font-size:4vw;
+          }
         @media only screen and (max-width: 600px) {
             font-size:5vw;
             
               }
+           
     }
    h3 {
     font-size: 1.5vw;
     color:var(--blue);
+    @media only screen and (max-width:769px) {
+        font-size:2.4vw;
+      }
     @media only screen and (max-width: 600px) {
         font-size:2.5vw;
         
           }
+         
+    
    }
 
    ul {
@@ -102,6 +128,9 @@
     
     color : var(--darkerblue);
     padding:1vw 0 0 2vw ;
+    @media only screen and (max-width:769px) {
+        font-size: 2.5vw;;
+    }
     @media only screen and (max-width: 600px) {
         font-size:2.7vw;
         padding:1vw 0 0 4vw ;
@@ -116,6 +145,11 @@
     border: 0.3vw solid  var(--blue);
     width:35vw;
     text-align: left;
+    @media  (max-width: 769px) {
+        width:120vw;
+        height:50vw;
+        
+          }
     @media only screen and (max-width: 600px) {
         width:120vw;
         height:60vw;
@@ -126,16 +160,22 @@
         flex-direction: row;
         align-items: center;
         gap:0.5vw;
+       
         
   .image {
    
     img {
       height:4vw;
        border-radius:50%;
+       @media  (max-width: 769px) {
+       height:7vw;
+        
+          }
        @media only screen and (max-width: 600px) {
         height:8vw;;
     
           }
+         
     }
   }
        
@@ -144,6 +184,7 @@
         display:flex;
     flex-direction: column;
 
+    
     @media only screen and (max-width: 600px) {
         font-size:5vw;
    
@@ -152,20 +193,28 @@
         font-size:1.5vw;
         padding:0;
         margin:0;
+        @media only screen and (max-width:769px) {
+            font-size:3vw;
+            }
         @media only screen and (max-width: 600px) {
             font-size:5vw;
       
               }
+            
     }
     .website {
        
         font-size:1vw;
         padding:0;
         margin:0;
+        @media only screen and (max-width:769px) {
+            font-size:2vw;
+            }
         @media only screen and (max-width: 600px) {
             font-size:4vw;
          
         }
+      
     }
    
    
@@ -174,12 +223,17 @@
         padding-top:1vw;
         font-size: 1.2vw;
         color: rgb(73, 73, 73);
-        @media only screen and (max-width: 600px) {
-            font-size:2.5vw;
-           
-            
-              }
-    }
+        @media only screen and (max-width:769px) {
+            font-size:2vw;
+            } 
+            @media only screen and (max-width: 600px) {
+                font-size:2.5vw;
+               
+                
+                  }
+}
+       
+             
 }
 
     }

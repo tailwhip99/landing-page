@@ -40,15 +40,20 @@
          .website {
         display:flex;
         flex-direction: column;
-       
-            border:0.1vw dashed var(--blue);
-            width:30vw;
+    
+            border:0.1vw solid var(--blue);
+            width:25vw;
             height:35vw;
-            @media only screen and (max-width: 600px) {
-              width:50vw;
-              height:60vw;
-              
+          
+                @media (max-width:900px) {
+                  width:35vw;
                 }
+                @media only screen and (max-width: 600px) {
+                  width:50vw;
+                  height:60vw;
+                  
+                    }
+                 
             .image {
             margin:0;
              height:20vw;
@@ -64,19 +69,31 @@
               padding-top:1vw;
               margin:0;
               font-size: 2vw;
-              @media only screen and (max-width: 600px) {
-                font-size:5vw;
+              @media only screen and (max-width: 769px) {
+                font-size:2.5vw;
+               
                 
                   }
+              @media only screen and (max-width: 600px) {
+                font-size:4.5vw;
+                
+                  }
+               
             }
 
             .description {
+              padding:0 2vw 0 2vw;
               color:var(--blue);
-              font-size:1vw;
+              font-size:1.3vw;
+              @media only screen and (max-width: 769px) {
+                font-size:1.5vw;
+                }
               @media only screen and (max-width: 600px) {
                 font-size:2.5vw;
                 
                   }
+                 
+                 
             }
            
          }
